@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react';
 
 import HeaderComponent from '~/components/HeaderComponent/HeaderComponent';
 
-import appStyles from './App-Style';
+import appStyles from './AppStyles';
 
 //import { useGetPostsQuery } from '~/query/services/posts.ts';
 
