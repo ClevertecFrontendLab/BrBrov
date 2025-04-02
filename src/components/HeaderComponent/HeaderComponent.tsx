@@ -1,6 +1,7 @@
 import { chakra, ChakraComponent } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
+import BreadcrumbComponent from '../BreadCrumbComponent/BreadCrumpComponent';
 import LogoComponent from '../LogoComponent/LogoComponent';
 import headerStyles from './HeaderComponentStyles';
 
@@ -10,6 +11,7 @@ function HeaderComponent(): ReactElement {
     return (
         <HeaderChakra sx={headerStyles}>
             <LogoComponent />
+            <BreadcrumbComponent />
         </HeaderChakra>
     );
 }

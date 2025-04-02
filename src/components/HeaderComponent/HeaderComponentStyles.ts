@@ -7,7 +7,7 @@ const headerStyles: SystemStyleObject = {
     boxSizing: 'border-box',
     paddingLeft: { base: '16px', md: '20px' },
     paddingRight: { base: '56px', md: '20px', sm: '16px' },
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#ffffd3',
 };
