@@ -11,10 +11,10 @@ const mainTheme: ConfTheme = extendTheme({
         xl: '1920px',
         '2xl': '2560px',
     },
-    font: {
+    fonts: {
         rubik: 'Rubik, sans-serif',
         inter: 'Inter, sans-serif',
-        robot: 'Roboto, sans-serif',
+        roboto: 'Roboto, sans-serif',
     },
     fontSizes: {
         '12': '12px',

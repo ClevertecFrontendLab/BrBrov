@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Inter';
-    src: url('@public/Inter.ttf') format('ttf');
+    src: url('@public/Inter.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('@public/Roboto.ttf') format('ttf');
+    src: url('@public/Roboto.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Rubik';
-    src: url('@public/Rubik') format('ttf');
+    src: url('@public/Rubik.ttf');
     font-weight: normal;
     font-style: normal;
 }
