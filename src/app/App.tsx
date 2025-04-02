@@ -1,5 +1,7 @@
 import { Box } from '@chakra-ui/react';
 
+import HeaderComponent from '~/components/HeaderComponent/HeaderComponent';
+
 import appStyles from './App-Style';
 
 //import { useGetPostsQuery } from '~/query/services/posts.ts';
@@ -7,7 +9,9 @@ import appStyles from './App-Style';
 function App() {
     return (
         <>
-            <Box sx={appStyles}></Box>
+            <Box sx={appStyles}>
+                <HeaderComponent></HeaderComponent>
+            </Box>
         </>
     );
 }
