@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('@public/Inter.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('@public/Roboto.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('@public/Rubik') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
