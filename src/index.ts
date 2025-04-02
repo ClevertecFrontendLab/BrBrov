@@ -4,12 +4,12 @@ type ConfTheme = ReturnType<typeof extendTheme>;
 
 const mainTheme: ConfTheme = extendTheme({
     breakpoints: {
-        base: '0em', // 0px
-        sm: '360px', // 480px
-        md: '768px', // 768px
-        lg: '1440px', // 992px
-        xl: '1920px', // 1280px
-        '2xl': '2560px', // 1536px
+        base: '0em',
+        sm: '360px',
+        md: '768px',
+        lg: '1440px',
+        xl: '1920px',
+        '2xl': '2560px',
     },
 });
 
