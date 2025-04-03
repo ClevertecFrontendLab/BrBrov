@@ -2,6 +2,7 @@ import { chakra, ChakraComponent } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
 import BreadcrumbComponent from '../BreadCrumbComponent/BreadCrumpComponent';
+import BurgerButton from '../BurgerButtonComponent/BurgerButtonComponent';
 import CardAvatarComponent from '../CardAvatarComponent/CardAvatarComponent';
 import LogoComponent from '../LogoComponent/LogoComponent';
 import headerStyles from './HeaderComponentStyles';
@@ -14,6 +15,7 @@ function HeaderComponent(): ReactElement {
             <LogoComponent />
             <BreadcrumbComponent />
             <CardAvatarComponent />
+            <BurgerButton />
         </HeaderChakra>
     );
 }
