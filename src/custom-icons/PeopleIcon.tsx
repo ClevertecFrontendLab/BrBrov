@@ -15,8 +15,8 @@ const PeopleIcon: ComponentWithAs<'svg', IconProps> = createIcon({
                 fill='black'
             />
             <path
-                fill-rule='evenodd'
-                clip-rule='evenodd'
+                fillRule='evenodd'
+                clipRule='evenodd'
                 d='M3.912 10.5C3.80082 10.2659 3.74537 10.0092 3.75 9.75002C3.75 8.73377 4.26 7.68752 5.202 6.96002C4.73182 6.81514 4.24196 6.7443 3.75 6.75002C0.75 6.75002 0 9.00002 0 9.75002C0 10.5 0.75 10.5 0.75 10.5H3.912Z'
                 fill='black'
             />
