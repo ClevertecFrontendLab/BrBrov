@@ -4,7 +4,6 @@ const burgerButtonStyles: SystemStyleObject = {
     display: { base: 'flex', xl: 'none', lg: 'none' },
     w: '48px',
     h: '48px',
-    marginLeft: 'auto',
     bg: 'unset',
 };
 
