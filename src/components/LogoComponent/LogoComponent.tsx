@@ -13,9 +13,7 @@ function LogoComponent(): ReactElement {
             <LogoTitle
                 display={{
                     base: 'none',
-                    xl: 'inline-block',
-                    lg: 'inline-block',
-                    md: 'inline-block',
+                    sm: 'inline-block',
                 }}
             />
         </Flex>

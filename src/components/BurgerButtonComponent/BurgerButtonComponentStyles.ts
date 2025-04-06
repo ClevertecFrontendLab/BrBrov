@@ -1,7 +1,7 @@
 import { SystemStyleObject } from '@chakra-ui/react';
 
 const burgerButtonStyles: SystemStyleObject = {
-    display: { base: 'flex', xl: 'none', lg: 'none' },
+    display: { base: 'flex', md: 'none' },
     w: '48px',
     h: '48px',
     bg: 'unset',

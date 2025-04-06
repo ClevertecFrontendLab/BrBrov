@@ -6,8 +6,8 @@ import breadCrumpStyles from './BreadCrumpComponentStyles';
 function BreadcrumbComponent(): ReactElement {
     //TODO: must add router
     return (
-        <Breadcrumb sx={{ display: { base: 'none', xl: 'block', lg: 'block' } }}>
-            <BreadcrumbItem isCurrentPage sx={breadCrumpStyles}>
+        <Breadcrumb sx={{ display: { base: 'none', lg: 'block' } }}>
+            <BreadcrumbItem isCurrentPage sx={{ ...breadCrumpStyles }}>
                 <BreadcrumbLink>Главная</BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>
