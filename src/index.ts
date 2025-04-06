@@ -5,11 +5,10 @@ type ConfTheme = ReturnType<typeof extendTheme>;
 const mainTheme: ConfTheme = extendTheme({
     breakpoints: {
         base: '0em',
-        sm: '360px',
-        md: '768px',
-        lg: '1440px',
+        sm: '410px',
+        md: '769px',
+        lg: '1000px',
         xl: '1920px',
-        '2xl': '2560px',
     },
     fonts: {
         rubik: 'Rubik, sans-serif',
