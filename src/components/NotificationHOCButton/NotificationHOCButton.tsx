@@ -4,20 +4,23 @@ import { ComponentType, ReactElement } from 'react';
 import NotificationComponentType from '../../types/NotificationComponentType';
 
 const defaultWrapperStyle: SystemStyleObject = {
-    w: '56px',
-    h: '24px',
+    w: { base: '56px', lg: '85px', xl: '85px' },
+    h: { base: '24px', lg: '40px', xl: '85px' },
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '6px',
+    gap: { base: '6px', lg: '8px', xl: '8px' },
 };
 
-const defaultIconStyle: SystemStyleObject = {};
+const defaultIconStyle: SystemStyleObject = {
+    w: { base: '12px', lg: '16px', md: '16px' },
+    h: { base: '12px', lg: '16px', md: '16px' },
+};
 
 const defaultTextStyle: SystemStyleObject = {
     fontFamily: 'inter',
     fontWeight: '600',
-    fontSize: '12',
-    lineHeight: '133%',
+    fontSize: { base: '12', lg: '16', xl: '16' },
+    lineHeight: { base: '133%', lg: '150%', xl: '150%' },
     color: '#2db100',
 };
 
