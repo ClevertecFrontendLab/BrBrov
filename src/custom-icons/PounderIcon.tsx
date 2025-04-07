@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const PounderIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const PounderIcon: React.FC = createIcon({
     displayName: 'PounderIcon',
     path: (
         <svg

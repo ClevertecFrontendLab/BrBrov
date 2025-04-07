@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const VegetablePasteIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const VegetablePasteIcon: React.FC = createIcon({
     displayName: 'VegetablePasteIcon',
     path: (
         <svg

@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const BreadAndRollingPinIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const BreadAndRollingPinIcon: React.FC = createIcon({
     displayName: 'BreadAndRollingPinIcon',
     path: (
         <svg

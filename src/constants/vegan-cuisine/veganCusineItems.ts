@@ -6,6 +6,5 @@ import { veganCusineItems } from './veganCusineSubItems';
 export const veganCusine: MenuItemType = {
     submenu: veganCusineItems,
     name: 'Веганская кухня',
-    hrefUrl: null,
     icon: BayLeafIcon,
 };

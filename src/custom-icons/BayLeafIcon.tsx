@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const BayLeafIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const BayLeafIcon: React.FC = createIcon({
     displayName: 'BayLeafIcon',
     path: (
         <svg

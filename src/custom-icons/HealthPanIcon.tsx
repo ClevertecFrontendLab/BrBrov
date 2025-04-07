@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const HealthPanIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const HealthPanIcon: React.FC = createIcon({
     displayName: 'HealthPanIcon',
     path: (
         <svg

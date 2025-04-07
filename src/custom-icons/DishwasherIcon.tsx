@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const DishwasherIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const DishwasherIcon: React.FC = createIcon({
     displayName: 'DishwasherIcon',
     path: (
         <svg

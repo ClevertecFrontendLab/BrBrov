@@ -1,6 +1,6 @@
-import { ComponentWithAs, createIcon, IconProps } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react';
 
-const HeartFlagIcon: ComponentWithAs<'svg', IconProps> = createIcon({
+const HeartFlagIcon: React.FC = createIcon({
     displayName: 'HeartFlagIcon',
     path: (
         <svg

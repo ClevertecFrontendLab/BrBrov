@@ -1,10 +1,8 @@
-import { ComponentWithAs, IconProps } from '@chakra-ui/react';
-
 import SubMenuItemType from './SubMenuType';
 
-interface MenuItemType extends SubMenuItemType {
+interface MenuItemType extends Pick<SubMenuItemType, 'name'> {
     submenu: Array<SubMenuItemType>;
-    icon: ComponentWithAs<'svg', IconProps>;
+    icon: React.FC;
 }
 
 export default MenuItemType;

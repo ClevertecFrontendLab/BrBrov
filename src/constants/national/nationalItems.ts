@@ -6,6 +6,5 @@ import { nationalCuisineItems } from './nationalSubItems';
 export const national: MenuItemType = {
     submenu: nationalCuisineItems,
     name: 'Национальные',
-    hrefUrl: null,
     icon: GlobalFoodIcon,
 };
