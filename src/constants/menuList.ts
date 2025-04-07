@@ -8,7 +8,7 @@ import { firstDishesItems } from './first-dishes/firstDishesItems';
 import { grillDishes } from './grill-dishes/grillDishesItems';
 import { national } from './national/nationalItems';
 import { preparations } from './preparations/preparationsItems';
-import { salad } from './salasds/saladsItems';
+import { salad } from './salads/saladsItems';
 import { saucess } from './sauces/saucesItems';
 import { secondDishesItem } from './second-dishes/secondDishesItem';
 import { snacks } from './snacks/snacksItem';
