@@ -7,7 +7,6 @@ const footerComponentStyles: SystemStyleObject = {
     w: '100%',
     h: { base: '84px', md: '144px' },
     bottom: '0',
-    backgroundColor: '#00f',
 };
 
 export default footerComponentStyles;
