@@ -1,12 +1,13 @@
 import { SystemStyleObject } from '@chakra-ui/react';
 
 const navigationMenuComponentStyles: SystemStyleObject = {
+    position: 'absolute',
     display: { base: 'none', lg: 'flex', xl: 'flex' },
     width: '256px',
-    height: { base: 'calc(100vh - 64px)', lg: 'calc(100vh - 80px)', xl: 'calc(100vh - 80px)' },
-    padingTop: '24px',
+    height: { base: 'calc(100vh - 200px)', lg: 'calc(100vh - 200px)', xl: 'calc(100vh - 200px)' },
+    top: { base: '64px', md: '104px' },
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    overflowY: 'auto',
 };
 
 export default navigationMenuComponentStyles;

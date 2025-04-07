@@ -7,6 +7,7 @@ import BreadcrumbComponent from '../BreadCrumbComponent/BreadCrumpComponent';
 import BurgerButton from '../BurgerButtonComponent/BurgerButtonComponent';
 import CardAvatarComponent from '../CardAvatarComponent/CardAvatarComponent';
 import LogoComponent from '../LogoComponent/LogoComponent';
+import NavigationMenuComponent from '../NavigationMenuComponent/NavigationMenuComponent';
 import headerStyles from './HeaderComponentStyles';
 
 const HeaderChakra: ChakraComponent<'header', object> = chakra('header');
@@ -14,6 +15,7 @@ const HeaderChakra: ChakraComponent<'header', object> = chakra('header');
 function HeaderComponent(): ReactElement {
     return (
         <HeaderChakra sx={headerStyles}>
+            <NavigationMenuComponent />
             <LogoComponent />
             <BreadcrumbComponent />
             <CardAvatarComponent />
