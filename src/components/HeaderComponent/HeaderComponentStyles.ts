@@ -1,6 +1,8 @@
 import { SystemStyleObject } from '@chakra-ui/react';
 
 const headerStyles: SystemStyleObject = {
+    position: 'stycky',
+    zIndex: '3',
     display: 'flex',
     w: '100%',
     h: { base: '64px', md: '80px' },
