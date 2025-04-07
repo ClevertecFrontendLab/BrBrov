@@ -1,6 +1,8 @@
 import { Box } from '@chakra-ui/react';
 
+import FooterComponent from '~/components/FooterComponent/FooterComponent';
 import HeaderComponent from '~/components/HeaderComponent/HeaderComponent';
+import MainComponent from '~/components/MainComponent/MainComponent';
 
 import appStyles from './AppStyles';
 
@@ -11,6 +13,8 @@ function App() {
         <>
             <Box sx={appStyles}>
                 <HeaderComponent></HeaderComponent>
+                <MainComponent></MainComponent>
+                <FooterComponent></FooterComponent>
             </Box>
         </>
     );
