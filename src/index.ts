@@ -1,8 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 
-type ConfTheme = ReturnType<typeof extendTheme>;
-
-const mainTheme: ConfTheme = extendTheme({
+const mainTheme: Record<string, unknown> = extendTheme({
     breakpoints: {
         base: '0em',
         sm: '410px',
@@ -26,8 +24,5 @@ const mainTheme: ConfTheme = extendTheme({
         '48': '48px',
     },
 });
-
-//TODO: add global styles
-// console.log(mainTheme);
 
 export default mainTheme;
