@@ -16,7 +16,7 @@ const fromCucumbersBlanks: SubMenuItemType = {
 };
 
 const fromTomatosBlanks: SubMenuItemType = {
-    name: 'ИЗ томатов',
+    name: 'Из томатов',
     hrefUrl: null,
 };
 

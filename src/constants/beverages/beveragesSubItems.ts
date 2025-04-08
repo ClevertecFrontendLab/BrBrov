@@ -1,7 +1,7 @@
 import SubMenuItemType from '~/types/SubMenuType';
 
 const juices: SubMenuItemType = {
-    name: '',
+    name: 'Соки и фреши',
     hrefUrl: null,
 };
 
