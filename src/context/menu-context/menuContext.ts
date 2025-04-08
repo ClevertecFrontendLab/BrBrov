@@ -1,7 +1,7 @@
 import { Context } from 'react';
 import { createContext } from 'react';
 
-import menuList from '~/constants/menuList';
+import menuList from '~/constants/menu-list/menuList';
 import MenuListType from '~/types/MenuListType';
 
 const MenuContext: Context<MenuListType> = createContext(menuList);

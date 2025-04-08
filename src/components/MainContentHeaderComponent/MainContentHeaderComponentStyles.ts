@@ -9,6 +9,7 @@ export const mainContentHeaderStyles: SystemStyleObject = {
 
 const generalTextStyles: SystemStyleObject = {
     fontFamily: 'inter',
+    textAlign: 'center',
 };
 
 export const contentTitleStyles: SystemStyleObject = {
