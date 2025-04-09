@@ -27,12 +27,12 @@ const defaultTextStyle: SystemStyleObject = {
 function NotificationHOCButton(
     IconComponent: ComponentType<IconProps>,
 ): ComponentType<NotificationComponentType & IconProps> {
-    return function NotificationComponent(
-        { countClicks }: NotificationComponentType & IconProps,
-        wrapperStyles: SystemStyleObject = defaultWrapperStyle,
-        iconStyles: SystemStyleObject = defaultIconStyle,
-        textStyles: SystemStyleObject = defaultTextStyle,
-    ): ReactElement<NotificationComponentType & IconProps> {
+    return function NotificationComponent({
+        countClicks,
+        wrapperStyles = defaultWrapperStyle,
+        iconStyles = defaultIconStyle,
+        textStyles = defaultTextStyle,
+    }: NotificationComponentType): ReactElement<NotificationComponentType> {
         return (
             <Flex sx={wrapperStyles}>
                 <IconComponent sx={iconStyles} />

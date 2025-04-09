@@ -26,7 +26,7 @@ function SearchingSelectComponent(data: SearchingSelectType): ReactElement {
                     >
                         Выберите из списка...
                     </MenuButton>
-                    <MenuList sx={{ maxW: '234px' }}>
+                    <MenuList zIndex={1000} sx={{ maxW: '234px' }}>
                         {data.allergens
                             ? data.allergens.map((allergen, index) => (
                                   <MenuItem

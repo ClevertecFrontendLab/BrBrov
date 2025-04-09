@@ -6,6 +6,7 @@ const mainTheme: Record<string, unknown> = extendTheme({
         sm: '410px',
         md: '769px',
         lg: '1000px',
+        mlg: '1441px',
         xl: '1920px',
     },
     fonts: {
