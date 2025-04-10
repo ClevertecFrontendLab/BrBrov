@@ -2,7 +2,7 @@ import CategoryInfoTypes from './CategoryInfoTypes';
 import LikesInfoTypes from './LikesInfoType';
 
 interface CardOfJuicyType {
-    img: 'string';
+    img: string;
     owner?: {
         avatar: string;
         nickName: string;
