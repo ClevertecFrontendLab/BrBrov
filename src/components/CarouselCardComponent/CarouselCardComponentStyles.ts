@@ -73,11 +73,10 @@ export const carouselCardNotifyStyle: SystemStyleObject = {
 };
 
 const carouselCardGeneralBadgeStyles: SystemStyleObject = {
-    paddingLeft: '8px',
-    paddingRight: '8px',
     alignItems: 'center',
     gap: '8px',
     textTransform: 'none',
+    fontFamily: 'inter',
     fontWeight: '400',
     fontSize: '14',
     lineHeight: '143%',
@@ -87,14 +86,19 @@ const carouselCardGeneralBadgeStyles: SystemStyleObject = {
 
 export const carouselCardBadgeStyles: SystemStyleObject = {
     display: { base: 'none', md: 'flex' },
+    paddingLeft: '8px',
+    paddingRight: '8px',
     ...carouselCardGeneralBadgeStyles,
 };
 
 export const carouselCardBadgeTopStyles: SystemStyleObject = {
     position: 'absolute',
     display: { base: 'flex', md: 'none' },
+    h: '25px',
     top: '8px',
     left: '8px',
+    paddingLeft: '4px',
+    paddingRight: '4px',
     ...carouselCardGeneralBadgeStyles,
 };
 
