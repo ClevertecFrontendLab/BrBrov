@@ -1,16 +1,12 @@
-import { IconProps } from '@chakra-ui/react';
+import CategoryInfoTypes from './CategoryInfoTypes';
+import LikesInfoTypes from './LikesInfoType';
 
-interface CarouselCardComponentType {
+interface CarouselCardComponentType extends CategoryInfoTypes {
     img: string;
     heading: string;
     description: string;
-    categoryIcon: React.FC<IconProps>;
-    category: string;
-    likes?: {
-        hearts?: string;
-        people?: string;
-        smile?: string;
-    };
+
+    likes?: LikesInfoTypes;
 }
 
 export default CarouselCardComponentType;
