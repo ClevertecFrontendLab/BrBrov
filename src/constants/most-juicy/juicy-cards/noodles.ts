@@ -11,7 +11,7 @@ const noodles: CardOfJuicyType = {
     description:
         'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
     owner: {
-        avatar: '../../../assets/avatars/Alex.jpg',
+        avatar: '../../assets/avatars/Alex.jpg',
         nickName: 'Alex Cook',
     },
     likes: {
