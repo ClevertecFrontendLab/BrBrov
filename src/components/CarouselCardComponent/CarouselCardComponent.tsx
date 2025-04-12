@@ -35,7 +35,7 @@ function CarouselCardComponent(cardData: CarouselCardComponentType): ReactElemen
         <Box sx={carouselCardComponentStyles}>
             <Flex sx={carouselCardStyles}>
                 <Badge sx={carouselCardBadgeTopStyles}>
-                    <IconBadge />
+                    <IconBadge h='16px' w='16px' />
                     {cardData.category}
                 </Badge>
                 <Image src={cardData.img} alt={cardData.heading} sx={carouselCardImageStyles} />
@@ -50,7 +50,7 @@ function CarouselCardComponent(cardData: CarouselCardComponentType): ReactElemen
                     </CardBody>
                     <CardFooter sx={carouselCardNotifyStyle}>
                         <Badge sx={carouselCardBadgeStyles}>
-                            <IconBadge />
+                            <IconBadge h='16px' w='16px' />
                             {cardData.category}
                         </Badge>
                         {cardData.likes ? (
