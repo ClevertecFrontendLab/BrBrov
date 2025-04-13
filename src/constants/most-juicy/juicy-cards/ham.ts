@@ -11,7 +11,7 @@ const ham: CardOfJuicyType = {
     description:
         'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
     owner: {
-        avatar: '../../assets/avatars/HelenV.jpg',
+        avatar: '../../assets/avatars/Helen.jpg',
         nickName: 'Елена Высоцкая',
     },
     likes: {
