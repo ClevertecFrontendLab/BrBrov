@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 
 import WriteRecipeIcon from '~/custom-icons/WirteRecipeIcon';
 
-import { recordRecipeComponentStyles, textRecordRecipeStyles } from './RecordRecipeCOmponentStyles';
+import { recordRecipeComponentStyles, textRecordRecipeStyles } from './RecordRecipeComponentStyles';
 
 function RecordRecipeComponent(): ReactElement {
     return (

@@ -1,58 +1,51 @@
 import { SystemStyleObject } from '@chakra-ui/react';
 
-export const cardMostJuicyComponentStyles: SystemStyleObject = {
-    position: 'relative',
-    display: 'flex',
-    width: '100%',
-    flexWrap: 'wrap',
-    gap: '24px',
-    border: '1px solid rgba(0, 0, 0, 0.08)',
-    borderRadius: '8px',
+export const mostJuicyComponentStyles: SystemStyleObject = {
+    w: '100%',
+    maxW: '1360px',
+    marginTop: '20px',
+    marginLeft: { base: '0', md: '28px' },
+    flexDirection: 'column',
+    gap: { base: '12px', md: '16px', lg: '24px' },
 };
 
-export const imageMostJuicyComponentStyles: SystemStyleObject = {
-    w: { base: '158', md: '346px' },
-    h: { base: '128', md: '244px' },
-};
-
-export const ownerMostJuicyComponentStyles: SystemStyleObject = {
-    position: 'absolute',
-    display: { base: 'none', md: 'flex' },
-    top: '196px',
-    left: '24px',
-    padding: '4px 8px',
-    borderRadius: '4px',
-    background: ' #d7ff94',
-    gap: '8px',
-};
-const smTextStyles: SystemStyleObject = {
+export const titleJuicyComponentStyles: SystemStyleObject = {
     fontFamily: 'inter',
-    fontWeight: '400',
-    fontSize: '14',
-    lineHeight: '143%',
+    fontWeight: '500',
+    fontSize: { base: '24', md: '36', lg: '48' },
+    lineHeight: { base: '133%', md: '110%', lg: '100%' },
     color: '#000',
 };
 
-export const textOwnerMostJuicyComponentStyles: SystemStyleObject = {
-    ...smTextStyles,
+const buttonGeneralJuicyComponentStyles: SystemStyleObject = {
+    w: { base: '167px' },
+    h: { base: '40px' },
+    borderRadius: '6px',
+    padding: '0px 16px',
+    width: '167px',
+    height: '40px',
+    gap: '8px',
+    background: '#b1ff2e',
+    fontFamily: 'inter',
+    fontWeight: '600',
+    fontSize: { lg: '18p', base: '16' },
+    lineHeight: { lg: '156%', base: '150%' },
+    color: '#000',
 };
 
-export const topBadgeMostJuicyComponentStyles: SystemStyleObject = {
-    position: 'absolute',
-    display: { base: 'flex', md: 'none' },
-    h: '24px',
-    top: '4px',
-    left: '4px',
-    padding: '2px 4px',
-    gap: '4px',
-    borderRadius: '4px',
-    background: '#ffffd3',
-    ...smTextStyles,
+export const buttonTopJuicyComponentStyles: SystemStyleObject = {
+    display: { base: 'none', md: 'inline-flex' },
+    ...buttonGeneralJuicyComponentStyles,
 };
 
-export const infoMostJuicyComponentStyles: SystemStyleObject = {
-    display: 'flex',
-    padding: { base: '8px 8px 4px', md: '20px 24px' },
-    flexDirection: 'column',
-    gap: { base: '0', md: '24px' },
+export const buttonBottomJuicyComponentStyles: SystemStyleObject = {
+    display: { base: 'inline-flex', md: 'none' },
+    ...buttonGeneralJuicyComponentStyles,
+};
+
+export const containerJuicyComponentStyles: SystemStyleObject = {
+    flexDirection: { base: 'column', sm: 'row', md: 'column', mlg: 'row' },
+    flexWrap: { base: 'nowrap', sm: 'wrap', md: 'nowrap', lg: 'wrap' },
+    justifyContent: 'space-between',
+    rowGap: '24px',
 };

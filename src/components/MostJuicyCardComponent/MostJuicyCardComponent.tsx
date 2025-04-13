@@ -14,16 +14,27 @@ import {
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
-import WriteRecipeIcon from '~/custom-icons/WirteRecipeIcon';
-import CardOfJuicyType from '~/types/CardOfJuicyType';
-
 import {
+    cardBodyHeaderMostJuicyComponentStyles,
+    cardBodyMostJuicyComponentStyles,
+    cardDescriptionMostJuicyComponentStyles,
+    cardFooterMostJuicyComponent,
+    cardHeaderMostJuicyComponentStyles,
     cardMostJuicyComponentStyles,
+    categoryBadgeMostJuicyComponentStyles,
     imageMostJuicyComponentStyles,
+    infoCardMostJuicyComponentStyles,
     ownerMostJuicyComponentStyles,
+    prepareBtnMostJuicyComponent,
+    prepareIconMostJuicyComponent,
+    saveBtnMostJuicyComponent,
+    saveIconMostJuicyComponent,
     textOwnerMostJuicyComponentStyles,
     topBadgeMostJuicyComponentStyles,
-} from '../MostJuisyComponent/MostJuicyComponentStyles';
+} from '~/components/MostJuicyCardComponent/MostJuicyCardComponentStyles';
+import HeartFlagIcon from '~/custom-icons/HeartFlagIcon';
+import CardOfJuicyType from '~/types/CardOfJuicyType';
+
 import NotificationHeartFlagComponent from '../NotificationHeartFlagComponent/NotificationHearftFlagComponent';
 import NotificationPeopleComponent from '../NotificationPeopleComponent/NoticationPeopleComponent';
 import NotificationSmileComponent from '../NotificationSmileComponent/NotificationSmileComponent';
@@ -49,38 +60,70 @@ function MostJuicyCardComponent(cardData: CardOfJuicyType): ReactElement {
                 {cardData.categoryInfo.category}
             </Badge>
             <Image src={cardData.img} alt='Food foto' sx={imageMostJuicyComponentStyles} />
-            <Flex>
-                <CardHeader>
-                    <Badge>
+            <Flex sx={infoCardMostJuicyComponentStyles}>
+                <CardHeader sx={cardHeaderMostJuicyComponentStyles}>
+                    <Badge sx={categoryBadgeMostJuicyComponentStyles}>
                         <IconBadge />
                         {cardData.categoryInfo.category}
                     </Badge>
                     {cardData.likes ? (
-                        <Flex>
+                        <Flex gap='8px'>
                             {cardData.likes.hearts ? (
                                 <NotificationHeartFlagComponent
                                     countClicks={cardData.likes.hearts}
+                                    wrapperStyles={{
+                                        width: 'auto',
+                                        height: '',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                    }}
                                 />
                             ) : null}
                             {cardData.likes.people ? (
-                                <NotificationPeopleComponent countClicks={cardData.likes.people} />
+                                <NotificationPeopleComponent
+                                    countClicks={cardData.likes.people}
+                                    wrapperStyles={{
+                                        width: 'auto',
+                                        height: '',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                    }}
+                                />
                             ) : null}
                             {cardData.likes.smile ? (
-                                <NotificationSmileComponent countClicks={cardData.likes.smile} />
+                                <NotificationSmileComponent
+                                    countClicks={cardData.likes.smile}
+                                    wrapperStyles={{
+                                        width: 'auto',
+                                        height: '',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                    }}
+                                />
                             ) : null}
                         </Flex>
                     ) : null}
                 </CardHeader>
-                <CardBody>
-                    <Heading>{cardData.name}</Heading>
-                    <Text>{cardData.description}</Text>
+                <CardBody sx={cardBodyMostJuicyComponentStyles}>
+                    <Heading sx={cardBodyHeaderMostJuicyComponentStyles} isTruncated>
+                        {cardData.name}
+                    </Heading>
+                    <Text
+                        noOfLines={[0, 0, 0, 0, 0, 0, 0, 0, 3]}
+                        sx={cardDescriptionMostJuicyComponentStyles}
+                    >
+                        {cardData.description}
+                    </Text>
                 </CardBody>
-                <CardFooter>
-                    <Button>
-                        <WriteRecipeIcon />
+                <CardFooter sx={cardFooterMostJuicyComponent}>
+                    <Button sx={saveBtnMostJuicyComponent}>
+                        <HeartFlagIcon sx={saveIconMostJuicyComponent} />
                         Сохранить
                     </Button>
-                    <Button>Готовить</Button>
+                    <Button sx={prepareBtnMostJuicyComponent}>
+                        <HeartFlagIcon sx={prepareIconMostJuicyComponent} />
+                        Готовить
+                    </Button>
                 </CardFooter>
             </Flex>
         </Card>

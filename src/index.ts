@@ -2,7 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 
 const mainTheme: Record<string, unknown> = extendTheme({
     breakpoints: {
-        base: '0em',
+        base: '0',
         sm: '410px',
         md: '769px',
         lg: '1000px',

@@ -2,7 +2,7 @@ import FryingPanIcon from '~/custom-icons/FryingPanIcon';
 import CardOfJuicyType from '~/types/CardOfJuicyType';
 
 const quenelle: CardOfJuicyType = {
-    img: '/quenelle.jpg',
+    img: '/public/foods/quenelle.jpg',
     categoryInfo: {
         categoryIcon: FryingPanIcon,
         category: 'Вторые блюда',

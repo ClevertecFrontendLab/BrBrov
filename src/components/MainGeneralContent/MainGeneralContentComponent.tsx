@@ -1,10 +1,13 @@
 import { Flex } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
+import MostJuicyComponent from '~/components/MostJuisyComponent/MostJuicyComponent';
 import allergens from '~/constants/allergens/allergens';
 import carouselData from '~/constants/foods/carouselData';
+import mostJuicy from '~/constants/most-juicy/mostJuicy';
 import AllergensContext from '~/context/allergens/allergensContex';
 import FoodCards from '~/context/foodCards/foodCards';
+import MostJuicy from '~/context/most-juicy/mostJuicyContext';
 
 import MainContentHeaderComponent from '../MainContentHeaderComponent/MainContentHeaderComponent';
 import NewRecipesComponent from '../NewRecipesComponent/NewRecipesComponent';
@@ -21,6 +24,9 @@ function MainGeneralContentCompnent(): ReactElement {
             <FoodCards.Provider value={carouselData}>
                 <NewRecipesComponent />
             </FoodCards.Provider>
+            <MostJuicy.Provider value={mostJuicy}>
+                <MostJuicyComponent />
+            </MostJuicy.Provider>
         </Flex>
     );
 }
