@@ -10,9 +10,10 @@ import {
     Heading,
     IconProps,
     Image,
+    Spacer,
     Text,
 } from '@chakra-ui/react';
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
 import {
     cardBodyHeaderMostJuicyComponentStyles,
@@ -29,6 +30,7 @@ import {
     prepareIconMostJuicyComponent,
     saveBtnMostJuicyComponent,
     saveIconMostJuicyComponent,
+    saveTextMostJuicyComponent,
     textOwnerMostJuicyComponentStyles,
     topBadgeMostJuicyComponentStyles,
 } from '~/components/MostJuicyCardComponent/MostJuicyCardComponentStyles';
@@ -40,14 +42,20 @@ import NotificationPeopleComponent from '../NotificationPeopleComponent/Noticati
 import NotificationSmileComponent from '../NotificationSmileComponent/NotificationSmileComponent';
 
 function MostJuicyCardComponent(cardData: CardOfJuicyType): ReactElement {
+    const [icon, setIcon] = useState<string | null>(null);
     const IconBadge: React.FC<IconProps> = cardData.categoryInfo.categoryIcon;
+
+    useEffect(() => {
+        if (cardData.owner?.avatar)
+            import(cardData.owner?.avatar).then((importedIcon) => setIcon(importedIcon.default));
+    }, [cardData.owner?.avatar]);
     return (
         <Card sx={cardMostJuicyComponentStyles}>
             {cardData.owner ? (
                 <Flex sx={ownerMostJuicyComponentStyles}>
                     <Avatar
                         name={cardData.owner?.nickName}
-                        src={cardData.owner?.avatar}
+                        src={icon ?? cardData.owner?.nickName}
                         sx={{ w: '16px', h: '16px' }}
                     />
                     <Text sx={textOwnerMostJuicyComponentStyles}>
@@ -102,7 +110,9 @@ function MostJuicyCardComponent(cardData: CardOfJuicyType): ReactElement {
                                 />
                             ) : null}
                         </Flex>
-                    ) : null}
+                    ) : (
+                        <Spacer w='100%' h='16px' />
+                    )}
                 </CardHeader>
                 <CardBody sx={cardBodyMostJuicyComponentStyles}>
                     <Heading sx={cardBodyHeaderMostJuicyComponentStyles} isTruncated>
@@ -118,7 +128,7 @@ function MostJuicyCardComponent(cardData: CardOfJuicyType): ReactElement {
                 <CardFooter sx={cardFooterMostJuicyComponent}>
                     <Button sx={saveBtnMostJuicyComponent}>
                         <HeartFlagIcon sx={saveIconMostJuicyComponent} />
-                        Сохранить
+                        <Text sx={saveTextMostJuicyComponent}>Сохранить</Text>
                     </Button>
                     <Button sx={prepareBtnMostJuicyComponent}>
                         <HeartFlagIcon sx={prepareIconMostJuicyComponent} />

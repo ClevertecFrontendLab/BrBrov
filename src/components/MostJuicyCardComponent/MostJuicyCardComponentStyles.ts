@@ -5,7 +5,7 @@ export const cardMostJuicyComponentStyles: SystemStyleObject = {
     display: 'flex',
     boxSizing: 'border-box',
     width: '100%',
-    maxWidth: { base: '328px', xl: '668px', md: '100%', sm: '100%' },
+    maxWidth: { base: '328px', xl: '668px', md: '100%', sm: '356px' },
     flexDirection: 'row',
     border: '1px solid rgba(0, 0, 0, 0.08)',
     borderRadius: '8px',
@@ -30,7 +30,7 @@ export const ownerMostJuicyComponentStyles: SystemStyleObject = {
 const smTextStyles: SystemStyleObject = {
     fontFamily: 'inter',
     fontWeight: '400',
-    fontSize: '14',
+    fontSize: { base: '12', md: '14' },
     lineHeight: '143%',
     color: '#000',
 };
@@ -96,6 +96,7 @@ export const cardBodyHeaderMostJuicyComponentStyles: SystemStyleObject = {
 };
 
 export const cardDescriptionMostJuicyComponentStyles: SystemStyleObject = {
+    display: { base: 'none', md: '-webkit-box' },
     fontFamily: 'inter',
     fontWeight: '400',
     fontSize: '14',
@@ -113,18 +114,23 @@ export const cardFooterMostJuicyComponent: SystemStyleObject = {
 };
 
 export const saveBtnMostJuicyComponent: SystemStyleObject = {
-    w: { base: '24px', md: '122px' },
-    h: { base: '24px', md: '32px' },
-    padding: '0px 6px',
-    gap: '8px',
-    fontFamily: 'inter',
-    fontWeight: '600',
-    fontSize: { base: '0', sm: '14' },
-    lineHeight: { base: '143%', sm: '143%' },
-    color: 'rgba(0, 0, 0, 0.8)',
+    w: { base: '22px', md: '122px' },
+    h: { base: '22px', md: '32px' },
+    minW: '22px',
+    padding: { base: '0', md: '0px 6px' },
+    gap: { base: '0', md: '8px' },
     background: 'rgba(255, 255, 255, 0.06)',
     border: '1px solid rgba(0, 0, 0, 0.48)',
     borderRadius: '6px',
+};
+
+export const saveTextMostJuicyComponent: SystemStyleObject = {
+    display: { base: 'none', md: 'inline-block' },
+    fontFamily: 'inter',
+    fontWeight: '600',
+    fontSize: { base: '0', md: '14' },
+    lineHeight: { base: '143%', sm: '143%' },
+    color: 'rgba(0, 0, 0, 0.8)',
 };
 
 export const saveIconMostJuicyComponent: SystemStyleObject = {
@@ -140,7 +146,7 @@ export const prepareBtnMostJuicyComponent: SystemStyleObject = {
     gap: { base: '6px', md: '8px' },
     fontFamily: 'inter',
     fontWeight: '600',
-    fontSize: { base: '12', sm: '14' },
+    fontSize: { base: '12', md: '14' },
     lineHeight: { base: '133%', sm: '143%' },
     color: '#fff',
     border: '1px solid rgba(0, 0, 0, 0.08)',
@@ -149,7 +155,7 @@ export const prepareBtnMostJuicyComponent: SystemStyleObject = {
 };
 
 export const prepareIconMostJuicyComponent: SystemStyleObject = {
-    display: { base: 'none', sm: 'inline-block', md: 'none' },
+    display: { base: 'none', sm: 'inline-block', md: 'none', mlg: 'none' },
     w: { base: '12px', md: '14px' },
     h: { base: '12px', md: '14px' },
 };
