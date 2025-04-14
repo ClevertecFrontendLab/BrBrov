@@ -22,6 +22,7 @@ import {
     searchingContentComponentStyles,
     searchingContentInput,
     searchingContentTopStyles,
+    serchingButtonContentStyles,
 } from './SearchingContentComponentStyles';
 
 function SearchingContentComponent(): ReactElement {
@@ -29,11 +30,21 @@ function SearchingContentComponent(): ReactElement {
     return (
         <FormControl sx={searchingContentComponentStyles}>
             <Flex sx={searchingContentTopStyles}>
-                <IconButton aria-label='Show search request' icon={<VariantSearchIcon />} />
+                <IconButton
+                    aria-label='Show search request'
+                    icon={<VariantSearchIcon boxSize={{ base: '30px', md: '46px' }} />}
+                    sx={serchingButtonContentStyles}
+                />
                 <InputGroup>
                     <Input placeholder='Название или ингредиент...' sx={searchingContentInput} />
-                    <InputRightElement display='flex' alignItems='center' w='48px' h='48px'>
-                        <LoupeIcon />
+                    <InputRightElement
+                        display='flex'
+                        justifyContent='center'
+                        alignItems='center'
+                        w={{ base: '32px', md: '48px' }}
+                        h='100%'
+                    >
+                        <LoupeIcon boxSize={{ base: '14px', md: '18px' }} />
                     </InputRightElement>
                 </InputGroup>
             </Flex>

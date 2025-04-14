@@ -16,6 +16,16 @@ export const searchingContentTopStyles: SystemStyleObject = {
     gap: '12px',
 };
 
+export const serchingButtonContentStyles: SystemStyleObject = {
+    display: 'block',
+    w: { base: '32px', md: '48px' },
+    minW: 'unset',
+    h: { base: '32px', md: '48px' },
+    border: '1px solid rgba(0, 0, 0, 0.48)',
+    borderRadius: '6px',
+    background: 'unset',
+};
+
 const inputTextStyles: SystemStyleObject = {
     fontFamily: 'inter',
     fontWeight: '400',
@@ -25,7 +35,7 @@ const inputTextStyles: SystemStyleObject = {
 
 export const searchingContentInput: SystemStyleObject = {
     w: '100%',
-    h: '48px',
+    h: { base: '32px', md: '48px' },
     ...inputTextStyles,
     border: '1px solid rgba(0, 0, 0, 0.48)',
     borderRadius: '6px',
@@ -43,6 +53,7 @@ export const searchingContentInput: SystemStyleObject = {
 };
 
 export const searchingContentBottomStyles: SystemStyleObject = {
+    display: { base: 'none', md: 'flex' },
     w: '100%',
     justifyContent: 'center',
     alignItems: 'center',
