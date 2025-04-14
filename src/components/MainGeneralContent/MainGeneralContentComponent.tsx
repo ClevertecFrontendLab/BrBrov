@@ -5,13 +5,16 @@ import MostJuicyComponent from '~/components/MostJuisyComponent/MostJuicyCompone
 import allergens from '~/constants/allergens/allergens';
 import culinaryBlogs from '~/constants/cullinary-blog/culinaryBlogs';
 import carouselData from '~/constants/foods/carouselData';
+import veganData from '~/constants/kitchen-data/veganData';
 import mostJuicy from '~/constants/most-juicy/mostJuicy';
 import AllergensContext from '~/context/allergens/allergensContex';
 import CulinaryBlogs from '~/context/culinary-blog/culinaryBlogContext';
 import FoodCards from '~/context/foodCards/foodCards';
 import MostJuicy from '~/context/most-juicy/mostJuicyContext';
+import VeganContext from '~/context/vegan-data/veganContext';
 
 import CulinaryBlogComponent from '../CulinaryBlogsComponent/CulinaryBogsComponent';
+import KitchenComponent from '../KitchenComponent/KitchenComponent';
 import MainContentHeaderComponent from '../MainContentHeaderComponent/MainContentHeaderComponent';
 import NewRecipesComponent from '../NewRecipesComponent/NewRecipesComponent';
 import SearchingContentComponent from '../SearchingContentComponent/SearchingContentComponent';
@@ -33,6 +36,9 @@ function MainGeneralContentCompnent(): ReactElement {
             <CulinaryBlogs.Provider value={culinaryBlogs}>
                 <CulinaryBlogComponent />
             </CulinaryBlogs.Provider>
+            <VeganContext.Provider value={veganData}>
+                <KitchenComponent />
+            </VeganContext.Provider>
         </Flex>
     );
 }
