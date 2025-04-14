@@ -12,8 +12,8 @@ export const newRecipeHeadingStyles: SystemStyleObject = {
     paddingLeft: { base: '0', mlg: '14px' },
     fontFamily: 'inter',
     fontWeight: '500',
-    fontSize: '48',
-    lineHeight: '100%',
+    fontSize: { base: '24', md: '36', lg: '48' },
+    lineHeight: { base: '133%', md: '111%', lg: '100%' },
     color: '#000',
 };
 

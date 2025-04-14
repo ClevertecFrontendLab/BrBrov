@@ -15,8 +15,8 @@ const generalTextStyles: SystemStyleObject = {
 export const contentTitleStyles: SystemStyleObject = {
     ...generalTextStyles,
     fontWeight: '700',
-    fontSize: { base: '24', md: '48' },
-    lineHeight: { base: '133 %', md: '100%' },
+    fontSize: { base: '24', md: '32', lg: '48' },
+    lineHeight: { base: '133 %', md: '111%', lg: '100%' },
     color: '#000',
 };
 
