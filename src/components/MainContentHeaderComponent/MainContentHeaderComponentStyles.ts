@@ -1,7 +1,7 @@
 import { SystemStyleObject } from '@chakra-ui/react';
 
 export const mainContentHeaderStyles: SystemStyleObject = {
-    paddingTop: '32px',
+    paddingTop: { base: '16px', md: '32px' },
     flexDirection: 'column',
     alignItems: 'center',
     gap: '12px',
@@ -15,8 +15,8 @@ const generalTextStyles: SystemStyleObject = {
 export const contentTitleStyles: SystemStyleObject = {
     ...generalTextStyles,
     fontWeight: '700',
-    fontSize: '48',
-    lineHeight: '100%',
+    fontSize: { base: '24', md: '48' },
+    lineHeight: { base: '133 %', md: '100%' },
     color: '#000',
 };
 
